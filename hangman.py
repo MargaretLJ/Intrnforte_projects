@@ -10,9 +10,10 @@ def get_word(): # to select a random word from the file
     return word.upper()
 
 
-print("Welcome to hangman!!!!, Let's begin\n--------------------------")
+
 
 def hangman():
+    print("Welcome to hangman!!!!, Let's begin\n--------------------------")
     word=get_word()
     word_letters=set(word) #set of letters in the chosen word
     alphabet =string.ascii_uppercase
