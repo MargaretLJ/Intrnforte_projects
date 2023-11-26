@@ -23,7 +23,8 @@ def hangman():
 
     while(len(word_letters)>0 and lives>0):
 
-        print("You have", lives, "lives remaining and these are the letters you have guessed:",''.join(used_letters))
+        print("Lives remaining", lives) 
+        print("These are the letters you have guessed:",''.join(used_letters))
 
         #display the word
         current_word=[letter if letter in used_letters else '_' for letter in word]
